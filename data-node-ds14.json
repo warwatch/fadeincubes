@@ -260,8 +260,8 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "RedHat",
-            "offer": "Linux",
+            "publisher": "Redhat",
+            "offer": "RHEL",
             "sku": "6.8",
             "version": "6.8.20161028"
           },
