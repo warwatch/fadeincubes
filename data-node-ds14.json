@@ -229,11 +229,6 @@
       "apiVersion": "[parameters('resourceAPIVersion')]",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(variables('vmName'), copyIndex())]",
-      "plan": {
-        "name": "Redhat:RHEL:6.8:6.8.20161028",
-        "publisher": "Redhat",
-        "product": "Redhat:RHEL:6.8:6.8.20161028"
-      },
       "location": "[resourceGroup().location]",
       "copy": {
         "name": "dataNodeNicLoop",
