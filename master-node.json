@@ -328,7 +328,7 @@
             "publisher": "Redhat",
             "offer": "Linux",
             "sku": "6.8",
-	    "version": "6.8.20161028"
+	    "version": "latest"
           },
           "osDisk": {
             "name": "osdisk",
