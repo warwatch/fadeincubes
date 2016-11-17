@@ -299,6 +299,11 @@
       "apiVersion": "[parameters('resourceAPIVersion')]",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(variables('vmName'), copyIndex())]",
+      "plan": {
+        "name": "cloudera-centos-6",
+        "publisher": "cloudera",
+        "product": "Redhat"
+      },
       "location": "[resourceGroup().location]",
       "copy": {
         "name": "masterNodeNicLoop",
@@ -328,7 +333,7 @@
             "publisher": "Redhat",
             "offer": "Linux",
             "sku": "6.8",
-	    "version": "6.8"          
+	    "version": "6.8.20161028"          
 	},
           "osDisk": {
             "name": "osdisk",
