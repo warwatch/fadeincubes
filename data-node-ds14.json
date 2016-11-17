@@ -258,7 +258,6 @@
             "publisher": "Redhat",
             "offer": "RHEL",
             "sku": "6.8",
-	    "version": "6.8.20161028"
           },
           "osDisk": {
             "name": "osdisk",
