@@ -326,7 +326,7 @@
         "storageProfile": {
           "imageReference": {
             "publisher": "RedHat",
-            "offer": "RHEL",
+            "offer": "Linux",
             "sku": "6.8",
             "version": "6.8.20161028"
           },
