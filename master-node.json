@@ -328,8 +328,8 @@
             "publisher": "Redhat",
             "offer": "Linux",
             "sku": "6.8",
-	    "version": "6.8.20160921"
-          },
+	    "version": "6.8.20161028"          
+	},
           "osDisk": {
             "name": "osdisk",
             "vhd": {
