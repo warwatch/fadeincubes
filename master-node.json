@@ -302,7 +302,7 @@
       "plan": {
         "name": "cloudera-centos-6",
         "publisher": "cloudera",
-        "product": "Redhat"
+        "product": "cloudera-centos-6"
       },
       "location": "[resourceGroup().location]",
       "copy": {
@@ -330,11 +330,11 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "Redhat",
-            "offer": "Linux",
-            "sku": "6.8",
-	    "version": "6.8.20161028"          
-	},
+            "publisher": "cloudera",
+            "offer": "cloudera-centos-6",
+            "sku": "CLOUDERA-CENTOS-6",
+            "version": "latest"
+          },
           "osDisk": {
             "name": "osdisk",
             "vhd": {
