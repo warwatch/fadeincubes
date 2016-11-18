@@ -298,11 +298,7 @@ chema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplat
       "apiVersion": "[parameters('resourceAPIVersion')]",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(variables('vmName'), copyIndex())]",
-      "publisher": "Redhat",
-      "offer": "RHEL",
-      "sku": "6.8",
-      "version": "6.8.20161028"
-      },
+      "name": "[concat(parameters('clusterSpec').clusterName, '-', parameters('role')[copyIndex()], variables('vmName'))]",
       "location": "[resourceGroup().location]",
       "copy": {
         "name": "masterNodeNicLoop",
