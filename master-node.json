@@ -298,7 +298,7 @@
     {
       "apiVersion": "[parameters('resourceAPIVersion')]",
       "type": "Microsoft.Compute/virtualMachines",
-      "name": "[concat(variables('vmName'), copyIndex())]"
+      "name": "[concat(variables('vmName'), copyIndex())]",
       },
       "location": "[resourceGroup().location]",
       "copy": {
