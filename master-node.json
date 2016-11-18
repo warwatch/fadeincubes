@@ -1,5 +1,4 @@
-{
-  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+chema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.1",
   "parameters": {
     "vnetID": {
@@ -299,6 +298,11 @@
       "apiVersion": "[parameters('resourceAPIVersion')]",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[concat(variables('vmName'), copyIndex())]",
+      "publisher": "Redhat",
+      "offer": "RHEL",
+      "sku": "6.8",
+      "version": "6.8.20161028"
+      },
       "location": "[resourceGroup().location]",
       "copy": {
         "name": "masterNodeNicLoop",
@@ -325,10 +329,10 @@
         },
         "storageProfile": {
           "imageReference": {
-            "publisher": "cloudera",
-            "offer": "cloudera-centos-6",
-            "sku": "CLOUDERA-CENTOS-6",
-            "version": "latest"
+            "publisher": "Redhat",
+            "offer": "RHEL",
+            "sku": "6.8",
+            "version": "6.8.20161028"
           },
           "osDisk": {
             "name": "osdisk",
@@ -420,3 +424,4 @@
     }
   }
 }
+
